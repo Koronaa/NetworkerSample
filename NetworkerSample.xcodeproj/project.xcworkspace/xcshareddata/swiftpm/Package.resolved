@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Koronaa/Networker.git",
       "state" : {
-        "branch" : "develop",
-        "revision" : "2c15d160323d0a70627a868e852d2c24a7813aeb"
+        "revision" : "2c15d160323d0a70627a868e852d2c24a7813aeb",
+        "version" : "1.0.0"
       }
     }
   ],
