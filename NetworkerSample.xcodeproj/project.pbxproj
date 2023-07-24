@@ -13,6 +13,7 @@
 		B6456D6C2A6E4B8F001FC744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6456D6A2A6E4B8F001FC744 /* Main.storyboard */; };
 		B6456D6E2A6E4B90001FC744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6456D6D2A6E4B90001FC744 /* Assets.xcassets */; };
 		B6456D712A6E4B90001FC744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6456D6F2A6E4B90001FC744 /* LaunchScreen.storyboard */; };
+		B6456D7A2A6E4D17001FC744 /* Networker in Frameworks */ = {isa = PBXBuildFile; productRef = B6456D792A6E4D17001FC744 /* Networker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6456D7A2A6E4D17001FC744 /* Networker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NetworkerSample;
+			packageProductDependencies = (
+				B6456D792A6E4D17001FC744 /* Networker */,
+			);
 			productName = NetworkerSample;
 			productReference = B6456D612A6E4B8F001FC744 /* NetworkerSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B6456D582A6E4B8F001FC744;
+			packageReferences = (
+				B6456D782A6E4D17001FC744 /* XCRemoteSwiftPackageReference "Networker" */,
+			);
 			productRefGroup = B6456D622A6E4B8F001FC744 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6456D782A6E4D17001FC744 /* XCRemoteSwiftPackageReference "Networker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Koronaa/Networker.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6456D792A6E4D17001FC744 /* Networker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6456D782A6E4D17001FC744 /* XCRemoteSwiftPackageReference "Networker" */;
+			productName = Networker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6456D592A6E4B8F001FC744 /* Project object */;
 }
